@@ -26,7 +26,6 @@ body {
 
 .heading-primary {
   position: absolute;
-  width: 60%;
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
@@ -36,7 +35,6 @@ body {
   line-height: 10rem;
   text-shadow: 0 0px 10px #b47aec;
   color: #fff;
-  animation: heroGrow 2s;
 }
 
 @media (min-width: 1024px) {
@@ -71,7 +69,7 @@ body {
 }
 
 .button:link, .button:visited {
-  padding: 1.8rem 5rem;
+  padding: 1.6rem 5rem;
   font-size: 2rem;
   font-weight: 600;
   text-decoration: none;
@@ -149,6 +147,7 @@ body {
   font-size: 2rem;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 .hero-links-item:link:not(:last-child), .hero-links-item:visited:not(:last-child) {
   padding-right: 1.5rem;
@@ -460,6 +459,7 @@ body {
 .form__wrapper {
   position: relative;
   height: 100vh;
+  margin-bottom: 35rem;
 }
 .form__img-blob {
   width: 120rem;
@@ -505,7 +505,6 @@ body {
   top: 45%;
   padding: 3.6rem;
   width: 50%;
-  height: 55%;
   background-color: #ffffff;
   border-radius: 1.2rem;
 }
@@ -520,9 +519,51 @@ body {
 }
 .form__input {
   width: 100%;
-  height: 5rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
   border-radius: 20px;
+  background-color: #fff9fb;
+  border: 2px solid #fbc6d9;
+  text-align: start;
 }
+.form__input--message {
+  height: 14rem;
+}
+.form__label-checkbox {
+  font-size: 1.8rem;
+}
+.form__checkbox {
+  margin-right: 0.8rem;
+}
+.form__link {
+  color: #702bb1;
+  text-decoration: none;
+}
+.form__button {
+  margin-top: 3rem;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.footer {
+  height: 25vh;
+  background-color: #333333;
+  text-align: center;
+  padding: 5.6rem;
+}
+.footer__text {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 9rem;
+}
+.footer__text-2 {
+  font-size: 1.3rem;
+}
+.footer__link {
+  color: #ecbff9;
+}
+
 @keyframes moveToRight {
   0% {
     opacity: 0;
