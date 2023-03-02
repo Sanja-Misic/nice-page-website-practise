@@ -19,6 +19,7 @@ body {
 
 .container {
   position: relative;
+  width: 120rem;
   max-width: 120rem;
   margin: 0 auto;
 }
@@ -47,9 +48,6 @@ body {
   }
 }
 .heading-secondary {
-  width: 70%;
-  margin: 0 auto;
-  margin-top: 15rem;
   text-align: center;
   font-size: 3.6rem;
   color: #702bb1;
@@ -72,6 +70,16 @@ body {
   color: #702bb1;
 }
 
+.button:link, .button:visited {
+  padding: 1.8rem 5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #702bb1;
+  border-radius: 2rem;
+}
 .header {
   width: 100%;
   background-color: #fff;
@@ -197,6 +205,7 @@ body {
 
 .offer {
   margin-bottom: 20rem;
+  margin-top: 15rem;
 }
 .offer__items {
   display: flex;
@@ -229,6 +238,9 @@ body {
   .offer__item {
     width: 40%;
   }
+}
+.company {
+  margin-bottom: 12rem;
 }
 .company__background {
   position: relative;
@@ -290,6 +302,149 @@ body {
   line-height: 1.7;
 }
 
+.digital-design {
+  background-image: url(/img/background-img-1.jpg);
+  height: 100vh;
+}
+.digital-design__wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+.digital-design__item {
+  background-color: #fff;
+  width: 46%;
+  padding: 12rem 3rem;
+  border-radius: 3rem;
+}
+.digital-design__heading {
+  text-align: start;
+  margin-bottom: 2rem;
+}
+.digital-design__text {
+  font-size: 2rem;
+  line-height: 1.7;
+  margin-bottom: 10rem;
+}
+.digital-design__img {
+  position: absolute;
+}
+.digital-design__img-1 {
+  width: 12rem;
+  top: 2%;
+  left: 0;
+}
+.digital-design__img-2 {
+  width: 25rem;
+  top: 12%;
+  left: 40%;
+}
+.digital-design__img-3 {
+  width: 10rem;
+  top: 30%;
+  right: 10%;
+  transform: rotate(90deg);
+}
+.digital-design__img-4 {
+  width: 22rem;
+  top: 60%;
+  right: 16%;
+}
+.digital-design__img-5 {
+  width: 28rem;
+  top: 70%;
+  left: 20%;
+}
+
+.what-we-do {
+  background-color: #fff6ef;
+}
+.what-we-do__background-gradient {
+  height: 40vh;
+  background-image: linear-gradient(#ecbff9, #fbc6d9);
+}
+.what-we-do__wrapper {
+  position: relative;
+  height: 100vh;
+  margin-top: -20vh;
+}
+.what-we-do__item {
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  width: 46%;
+  padding: 18rem 3rem;
+  border-radius: 3rem;
+}
+.what-we-do__heading {
+  text-align: start;
+  margin-bottom: 2rem;
+}
+.what-we-do__text {
+  font-size: 2rem;
+  line-height: 1.7;
+  margin-bottom: 10rem;
+}
+.what-we-do__img {
+  position: absolute;
+  width: 10rem;
+}
+.what-we-do__img-1 {
+  width: 28rem;
+  top: -6%;
+  left: 53%;
+  rotate: 30deg;
+}
+.what-we-do__img-2 {
+  width: 28rem;
+  top: 5%;
+  left: 16%;
+}
+.what-we-do__img-3 {
+  width: 18rem;
+  top: 60%;
+  left: 8%;
+}
+.what-we-do__img-4 {
+  width: 14rem;
+  top: 65%;
+  left: 62%;
+  rotate: 90deg;
+}
+
+.about-us {
+  position: relative;
+  height: 100vh;
+  background-image: url(/img/background-img-2.jpg);
+  background-size: cover;
+}
+.about-us__wrapper {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about-us__item {
+  background-color: #fff;
+  padding: 3rem;
+  padding-bottom: 6rem;
+}
+.about-us__heading {
+  font-size: 4.6rem;
+  text-align: start;
+}
+.about-us__text {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  margin-bottom: 7rem;
+}
+.about-us__media {
+  display: flex;
+  gap: 3rem;
+}
 @media (min-width: 768px) {
   .company__items {
     grid-template-columns: 1fr 1fr;
@@ -301,6 +456,72 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
+}
+.form__wrapper {
+  position: relative;
+  height: 100vh;
+}
+.form__img-blob {
+  width: 120rem;
+  margin-top: -3rem;
+  margin-left: 20rem;
+}
+.form__img {
+  position: absolute;
+  width: 20rem;
+  left: 0;
+}
+.form__img-1 {
+  width: 40rem;
+  top: 20%;
+  rotate: 30deg;
+}
+.form__img-2 {
+  width: 25rem;
+  top: 17%;
+  left: 75%;
+}
+.form__img-3 {
+  width: 25rem;
+  top: 70%;
+  left: 75%;
+  rotate: -140deg;
+}
+.form__img-4 {
+  width: 35rem;
+  top: 75%;
+  left: 45%;
+  rotate: -140deg;
+}
+.form__img-5 {
+  width: 14rem;
+  top: 100%;
+  left: 10%;
+  rotate: 90deg;
+}
+.form__item {
+  position: absolute;
+  left: 12%;
+  top: 45%;
+  padding: 3.6rem;
+  width: 50%;
+  height: 55%;
+  background-color: #ffffff;
+  border-radius: 1.2rem;
+}
+.form__item-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.form__label {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+.form__input {
+  width: 100%;
+  height: 5rem;
+  border-radius: 20px;
 }
 @keyframes moveToRight {
   0% {
