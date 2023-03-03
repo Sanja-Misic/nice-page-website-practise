@@ -1,0 +1,50 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  // font-size: 2rem;
+}
+
+//headings
+.heading-primary {
+  width: 60%;
+  font-size: 5.6rem;
+  font-weight: 800;
+  line-height: 6rem;
+  text-shadow: 0 0px 10px #b47aec;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .heading-primary {
+    line-height: 10rem;
+    font-size: 8rem;
+  }
+}
+@media (min-width: 1024px) {
+  .heading-primary {
+    font-size: 9.6rem;
+  }
+}
+
+.heading-secondary {
+  // width: 70%;
+  text-align: center;
+  font-size: 3.6rem;
+  color: #702bb1;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .heading-secondary {
+    font-size: 4.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .heading-secondary {
+    font-size: 5rem;
+  }
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #702bb1;
+}
