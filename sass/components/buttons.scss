@@ -1,0 +1,17 @@
+.button {
+  &:link,
+  &:visited {
+    padding: 1.6rem 5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $color-purple-main;
+    border-radius: 2rem;
+  }
+
+  &:hover,
+  &:active {
+  }
+}

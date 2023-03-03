@@ -1,0 +1,19 @@
+.footer {
+  height: 25vh;
+  background-color: #333333;
+  text-align: center;
+  padding: 5.6rem;
+  &__text {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 9rem;
+
+    &-2 {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__link {
+    color: #ecbff9;
+  }
+}
