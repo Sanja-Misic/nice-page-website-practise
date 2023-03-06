@@ -31,6 +31,7 @@ body {
   font-size: 3rem;
   color: $color-purple-main;
   font-weight: 700;
+  line-height: 1.2;
 }
 @media (min-width: 768px) {
   .heading-secondary {
@@ -44,8 +45,19 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: $color-purple-main;
+}
+
+@media (min-width: 768px) {
+  .heading-tertiary {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .heading-tertiary {
+    font-size: 2rem;
+  }
 }
