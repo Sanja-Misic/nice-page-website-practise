@@ -4,7 +4,7 @@
     left: 12%;
     top: 45%;
     padding: 3.6rem;
-    width: 50%;
+    width: 80%;
     background-color: $color-white;
     border-radius: 1.2rem;
   }
@@ -54,5 +54,16 @@
     text-align: center;
     display: block;
     width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  .form {
+    &__item {
+      width: 50%;
+    }
   }
 }

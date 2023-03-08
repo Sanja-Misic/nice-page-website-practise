@@ -1,4 +1,5 @@
 'use strict';
+//////Observers for animations/////////
 ////Offer observer
 //Variables
 const headingOffer = document.querySelector('.offer__heading-secondary');
@@ -256,3 +257,81 @@ const observerAboutUs = new IntersectionObserver(function (entries) {
 }, whatWeDoOptions);
 
 observerAboutUs.observe(aboutUsContainer);
+
+////Form observer
+//Variables
+const formContainer = document.querySelector('.form');
+const formImgBlob = document.querySelector('.form__img-blob');
+const formImg1 = document.querySelector('.form__img-1');
+const formImg2 = document.querySelector('.form__img-2');
+const formImg3 = document.querySelector('.form__img-3');
+const formImg4 = document.querySelector('.form__img-4');
+const formImg5 = document.querySelector('.form__img-5');
+console.log(formImgBlob);
+
+//hidde elements
+formImgBlob.classList.add('hidden-form-blob');
+formImg1.classList.add('hidden-form-img-1');
+formImg2.classList.add('hidden-form-img-2');
+formImg3.classList.add('hidden-form-img-3');
+formImg4.classList.add('hidden-form-img-4');
+formImg5.classList.add('hidden-form-img-5');
+
+//observer options
+const formOptions = {
+  root: null,
+  rootMargin: '10000px 0px -100px',
+  threshold: 0,
+};
+if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
+  formOptions.rootMargin = '10000px 0px -200px';
+} else if (window.innerWidth >= 1024) {
+  formOptions.rootMargin = '10000px 0px -300px';
+}
+
+//observer for show elements
+const observerForm = new IntersectionObserver(function (entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      formImgBlob.classList.add('show-form-blob');
+      formImg1.classList.add('show-form-img-1');
+      formImg2.classList.add('show-form-img-2');
+      formImg3.classList.add('show-form-img-3');
+      formImg4.classList.add('show-form-img-4');
+      formImg5.classList.add('show-form-img-5');
+    } else {
+      formImgBlob.classList.remove('show-form-blob');
+      formImg1.classList.remove('show-form-img-1');
+      formImg2.classList.remove('show-form-img-2');
+      formImg3.classList.remove('show-form-img-3');
+      formImg4.classList.remove('show-form-img-4');
+      formImg5.classList.remove('show-form-img-5');
+    }
+  });
+}, formOptions);
+
+observerForm.observe(formContainer);
+
+////////Naw bar close button////////////
+const burgerMenuButton = document.querySelector('.navigation-button');
+const sideBarCloseButton = document.querySelector('.sidebar__close-icon');
+const sideBarContainer = document.querySelector('.sidebar');
+const sideBarBackground = document.querySelector('.sidebar-background');
+
+burgerMenuButton.addEventListener('click', function () {
+  sideBarContainer.classList.add('sidebar-display');
+  sideBarBackground.style.visibility = 'visible';
+  sideBarBackground.style.opacity = '1';
+});
+
+sideBarBackground.addEventListener('click', function () {
+  sideBarContainer.classList.remove('sidebar-display');
+  sideBarBackground.style.visibility = 'hidden';
+  sideBarBackground.style.opacity = '0';
+});
+
+sideBarCloseButton.addEventListener('click', function () {
+  sideBarContainer.classList.remove('sidebar-display');
+  sideBarBackground.style.visibility = 'hidden';
+  sideBarBackground.style.opacity = '0';
+});
