@@ -4,7 +4,7 @@
   width: 100vw;
   height: 100vh;
   margin-bottom: 8rem;
-  background-image: url(/img/background-img-1.jpg);
+  background-image: url('../img/background-img-1.jpg');
   background-size: cover;
 
   &__wrapper {
@@ -429,7 +429,7 @@
 ////////////////////
 //DIGITAL DESIGN
 .digital-design {
-  background-image: url(/img/background-img-1.jpg);
+  background-image: url('../img/background-img-1.jpg');
   background-size: cover;
   height: 160vh;
   &__wrapper {
@@ -791,7 +791,7 @@
 .about-us {
   padding-top: 50vh;
   height: fit-content;
-  background-image: url(/img/background-img-2.jpg);
+  background-image: url('../img/background-img-2.jpg');
   background-size: cover;
   display: grid;
   padding-bottom: 8rem;
